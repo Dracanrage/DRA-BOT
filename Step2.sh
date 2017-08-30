@@ -3,7 +3,7 @@ ROM_TREE=$PWD
 ### Start ja3gxx
 cd $ROM_TREE/frameworks/base
 git am ~/Mokee/device/samsung/exynos5410-common/patches/frameworks_base/0001-DO-NOT-MERGE-PATCH-Zygote-Stop-breaking-the-entire-s.patch
-git fetch https://review.lineageos.org/LineageOS/android_frameworks_base refs/changes/45/169945/2 && git cherry-pick FETCH_HEAD
+git am ~/Mokee/device/samsung/exynos5410-common/patches/frameworks_base/0002-improve-compatibility-when-compiling-with-clang.patch
 export WITH_SU=true
 export WITH_TWRP=true
 export USE_CCACHE=1
